@@ -6,4 +6,13 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ServiceProviderRepository extends JpaRepository<ServiceProvider, Integer> {
+
 }
+public class ServiceProvider {
+    private Long id;
+    private String name;
+    private List<Country> countryList = new ArrayList<>();
+
+    // Getters and setters
+}
+
